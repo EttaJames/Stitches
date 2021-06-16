@@ -1,0 +1,236 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* GLOBAL */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.button-1 {
+  height: 35px;
+  background: #8e1d65;
+  border: 0;
+  color: #ffffff;
+  padding: 0 20px 0 20px;
+}
+
+.dark {
+  padding: 15px;
+  background: #270119;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* HEADER */
+header {
+  background: #cd9bbb;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #1a0111 3px solid;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #logo-part {
+  float: left;
+}
+
+header #logo-part {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 35px;
+}
+
+header .highlight {
+  color: #270119;
+  font-weight: bold;
+}
+
+header .current a {
+  color: #270119;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #270119;
+  font-weight: bold;
+}
+
+/* SHOWCASE */
+#showcase {
+  min-height: 500px;
+  background: url("../images/mainImage.jpg") no-repeat 0 -200px;
+  text-align: center;
+  color: #270119;
+}
+
+#showcase h1 {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  font-size: 55px;
+  font-family: cursive;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+/* CONTACT BANNER */
+.contact-banner {
+  min-height: 500px;
+  background: url("../images/callMe.jpg") no-repeat 0 -300px;
+  text-align: center;
+  color: #270119;
+}
+
+.contact-banner h1 {
+  margin-top: 180px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+  font-size: 55px;
+  font-family: cursive;
+}
+
+/* NEWSLETTER */
+#newsletter {
+  padding: 15px;
+  color: #ffffff;
+  background: #cd9bbb;
+}
+
+#newsletter h1 {
+  float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+
+#newsletter form input[type='email'] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+.page-title {
+  text-decoration: underline;
+}
+
+/* BOXES */
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  float: left;
+  width: 30%;
+  padding: 15px;
+  text-align: center;
+}
+
+/* MAINCOL */
+#main-col {
+  float: left;
+  width: 65%;
+}
+
+/* SIDEBAR */
+#sidebar {
+  float: right;
+  margin-top: 40px;
+  width: 30%;
+}
+
+#sidebar .quote input {
+  width: 90%;
+  padding: 5px;
+}
+
+#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+/* SERVICES */
+#services li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #f2e6ee;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #8e1d65;
+}
+
+/* MEDIA QUERIES */
+@media(max-width: 768px) {
+
+  header #logo-part,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #newsletter button{
+    display: block;
+    width: 100%;
+  }
+
+  .quote button{
+    display: block;
+    width: 93%;
+    margin-left: 13px;
+  }
+
+  #newsletter form input[type='email'] {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
